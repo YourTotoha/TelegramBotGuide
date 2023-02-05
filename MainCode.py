@@ -119,7 +119,7 @@ def answer (call):
             hello_text = "Вы выбрали массаж!"
             markup12 = types.InlineKeyboardMarkup(row_width=1)
             nasad_v_menu = types.InlineKeyboardButton('Вернуться в главное меню', callback_data="nasad_v_menu1")
-            dosirovka_masla = types.InlineKeyboardButton('Дозировка для возраста 0-6', callback_data="dosirovka_masla1")
+            dosirovka_masla = types.InlineKeyboardButton('Дозировка для возраста 0-6', callback_data="dosirovka")
             markup12.add(nasad_v_menu, dosirovka_masla)
             bot.send_message(call.message.chat.id, hello_text, reply_markup=markup12)
             
